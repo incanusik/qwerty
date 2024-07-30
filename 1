@@ -12,7 +12,10 @@ def main():
     time.sleep(0.1)
     print('')
     
-   
+ if ( 1>0 ):
+        time.sleep(0.1)
+        os.system('clear')
+        printLogo()
         print('')
         print("Scanning ...")
         output = subprocess.check_output("hcitool scan", shell=True, stderr=subprocess.STDOUT, text=True)
